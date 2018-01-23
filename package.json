@@ -1,0 +1,39 @@
+{
+  "name": "funbox",
+  "version": "1.0.0",
+  "description": "Тестовое задание для FunBox",
+  "scripts": {
+    "test": "editorconfig-cli"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.23.5",
+    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-filter": "^5.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-sass": "3.1.0",
+    "gulp-postcss": "7.0.1",
+    "gulp-csscomb": "^3.0.8",
+    "css-mqpacker": "^6.0.1",
+    "gulp-csso": "^3.0.0",
+    "autoprefixer": "7.2.x",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "nib": "^1.1.2",
+    "yellfy-pug-inheritance": "^2.0.0"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ]
+}

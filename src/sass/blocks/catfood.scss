@@ -1,0 +1,35 @@
+.catfood {
+  min-width: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,transparent 50%,rgba(0,0,0,0.5) 100%), url("../img/page-bg.jpg");
+}
+
+.catfood__container {
+  padding: 0 15px;
+}
+
+.catfood__title {
+  color: $font-white;
+  text-align: center;
+  font: 300 36px/1.2 $font-exo;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.catfood__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catfood__item {
+  background-color: $bg-white;
+}
