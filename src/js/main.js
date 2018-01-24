@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', function(){
 
+  if (!Element.prototype.matches) {
+      Element.prototype.matches =
+          Element.prototype.matchesSelector ||
+          Element.prototype.mozMatchesSelector ||
+          Element.prototype.msMatchesSelector ||
+          Element.prototype.oMatchesSelector ||
+          Element.prototype.webkitMatchesSelector ||
+          function(s) {
+              var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                  i = matches.length;
+              while (--i >= 0 && matches.item(i) !== this) {}
+              return i > -1;
+          };
+  }
+
   var itemClickHandler = function (e) {
     if(!e.target.matches('.catfood__buy, .catfood__check')) {
       var checkedItem = this.classList;
