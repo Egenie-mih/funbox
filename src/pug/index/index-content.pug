@@ -1,12 +1,13 @@
-.catfood
+section.catfood
     .catfood__container
         b.catfood__title Ты сегодня покормил кота?
         .catfood__list
             article.catfood__item
                 .catfood__card
+                    p.catfood__promo Сказочное заморское яство
+                    p.catfood__cancel Котэ не одобряет?
                     .catfood__description
-                        p.catfood__promo Сказочное заморское яство
-                        h1.catfood__name Нямушка 
+                        h2.catfood__name Нямушка 
                             span.catfood__taste с фуа-гра
                         .catfood__content
                             p.catfood__portion 
@@ -15,7 +16,63 @@
                             p.catfood__gift 
                                 span.catfood__gift-amount мышь 
                                 | в подарок
+                    .catfood__weight 
+                        span.catfood__weight-number 0,5 
+                        span.catfood__weight-units кг
+                    .catfood__image
+                        img(src="img/cat.png" alt="Нямушка с фуа-гра" width="319" height="272")
+                p.catfood__buy Чего сидишь? Порадуй котэ, 
+                    button(type="button").catfood__buy-button купи
+                p.catfood__check Печень утки разварная с артишоками.
+                p.catfood__disable Печалька, с фуа-гра закончился.
+            article.catfood__item.catfood__item--checked
+                .catfood__card
+                    p.catfood__promo Сказочное заморское яство
+                    p.catfood__cancel Котэ не одобряет?
+                    .catfood__description
+                        h2.catfood__name Нямушка 
+                            span.catfood__taste с рыбой
+                        .catfood__content
+                            p.catfood__portion 
+                                span.catfood__portion-amount 40 
+                                | порций
+                            p.catfood__gift 
+                                span.catfood__gift-amount 
+                                    b 2
+                                    | мыши 
+                                | в подарок
+                    .catfood__weight 
+                        span.catfood__weight-number 2 
+                        span.catfood__weight-units кг
+                    .catfood__image
+                        img(src="img/cat.png" alt="Нямушка с рыбой" width="319" height="272")
+                p.catfood__buy Чего сидишь? Порадуй котэ, 
+                    button(type="button").catfood__buy-button купи
+                p.catfood__check Головы щучьи с чесноком да свежайшая сёмгушка.
+                p.catfood__disable Печалька, с рыбой закончился.
+            article.catfood__item.catfood__item--disabled
+                .catfood__card
+                    p.catfood__promo Сказочное заморское яство
+                    p.catfood__cancel Котэ не одобряет?
+                    .catfood__description
+                        h2.catfood__name Нямушка 
+                            span.catfood__taste с курой
+                        .catfood__content
+                            p.catfood__portion 
+                                span.catfood__portion-amount 100 
+                                | порций
+                            p.catfood__gift 
+                                span.catfood__gift-amount 
+                                    b 5
+                                    | мышей 
+                                | в подарок
                             p.catfood__customer Заказчик доволен
-                    .catfood__weight 0,5 кг
-                p.catfood__foot Чего сидишь? Порадуй котэ, 
-                    a(href="") купи
+                    .catfood__weight 
+                        span.catfood__weight-number 5 
+                        span.catfood__weight-units кг
+                    .catfood__image
+                        img(src="img/cat.png" alt="Нямушка с курой" width="319" height="272")
+                p.catfood__buy Чего сидишь? Порадуй котэ, 
+                    button(type="button").catfood__buy-button купи
+                p.catfood__check Филе из цыплят с трюфелями в бульоне.
+                p.catfood__disable Печалька, с курой закончился.

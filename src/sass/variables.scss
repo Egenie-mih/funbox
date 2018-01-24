@@ -2,12 +2,23 @@ $mobile-widths-only: '(max-width: 767px)';
 $tablet-widths: '(min-width: 768px)';
 $desktop-widths: '(min-width: 1150px)';
 
-$retina: '(min-resolution: 144dpi), (min-resolution: 1.5dppx)';
-
 $font-exo: 'Exo2Thin', 'Arial', sans-serif;
 $font-trebuchet: 'Trebuchet MS', sans-serif;
 
 $font-white: #fff;
 $font-black: #000;
+$font-gray: #666;
+$font-blue: #1698d9;
+$font-lightblue: #2ea8e6;
+$font-pink: #d91667;
+$font-lightpink: #e52e7a;
+$font-yellow: #ff6;
+$font-gray: #b3b3b3;
 
 $bg-white: #fff;
+$bg-graywhite: #f2f2f2;
+$bg-blue: #1698d9;
+$bg-lightblue: #2ea8e6;
+$bg-pink: #d91667;
+$bg-lightpink: #e52e7a;
+$bg-gray: #b3b3b3;

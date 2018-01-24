@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
@@ -7,29 +7,29 @@ var filter = require('gulp-filter');
 var pugInheritance = require('yellfy-pug-inheritance');
 var pug = require('gulp-pug');
 var sourcemaps = require('gulp-sourcemaps');
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var mqpacker = require("css-mqpacker");
-var minify = require("gulp-csso");
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var mqpacker = require('css-mqpacker');
+var minify = require('gulp-csso');
 var csscomb = require('gulp-csscomb');
-var rename = require("gulp-rename");
-var svgstore = require("gulp-svgstore");
-var svgmin = require("gulp-svgmin");
+var rename = require('gulp-rename');
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
 var browserSync = require('browser-sync').create();
 var nib = require('nib');
 
 var reload = browserSync.reload;
 
-gulp.task("copy", function() {
+gulp.task('copy', function() {
   return gulp.src([
-    "src/fonts/*.{woff,woff2}",
-    "src/img/**",
-    "src/js/**"
+    'src/fonts/*.{woff,woff2}',
+    'src/img/**',
+    'src/js/**'
   ], {
-    base: "./src"
+    base: './src'
   })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest('build'));
 });
 
 // SCSS COMPILATOR
@@ -39,23 +39,23 @@ gulp.task('style', function() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: ["last 2 versions"]}),
+      autoprefixer({browsers: ['last 2 versions']}),
       mqpacker({
         sort: true
       })
     ]))
     .pipe(csscomb())
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest('build/css'))
     .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('beautify', function () {
-  return gulp.src("src/src/sass/**/*.scss")
+  return gulp.src('src/sass/**/*.scss')
     .pipe(csscomb())
-    .pipe(gulp.dest("src/sass"));
+    .pipe(gulp.dest('src/sass'));
 });
 
 let pugInheritanceCache = {};
@@ -64,14 +64,14 @@ let pugInheritanceCache = {};
 gulp.task('watch', () => {
   global.watch = true;
   browserSync.init(['build/css/*.css', 'build/*.html'], {
-      server: "./build/"
+      server: './build/'
   });
   gulp.watch(['src/sass/**/*.scss'], gulp.series('style'));
   gulp.watch(['src/pug/**/*.pug'], gulp.series('pug'))
     .on('all', (event, filepath) => {
       global.changedTempalteFile = filepath.replace(/\\/g, '/');
     });
-    gulp.watch("build/*.html").on("change", reload);
+    gulp.watch('build/*.html').on('change', reload);
 });
 
 // PUG GENERATING, CHANGES CHECK

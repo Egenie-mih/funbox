@@ -1,17 +1,16 @@
 @mixin container()
 {
-    padding-right: 30px;
-    padding-left: 30px;
+    box-sizing: border-box;
+    width: 100%;
 
-    @media #{$tablet-widths}
+    @media (min-width: 380px)
     {
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     @media #{$desktop-widths}
     {
-        max-width: 1050px;
-        margin: 0 auto;
+        max-width: 1150px;
     }
 }
