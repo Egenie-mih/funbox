@@ -26,12 +26,12 @@ document.addEventListener('DOMContentLoaded', function(){
   var items = document.querySelectorAll('.catfood__item');
   var itemsBuy = document.querySelectorAll('.catfood__item .catfood__buy-button');
 
-  items.forEach(function (item) {
+  Array.prototype.forEach.call(items, function (item) {
     item.addEventListener('click', itemClickHandler);
     item.addEventListener('mouseleave', itemOverHandler);
   });
 
-  itemsBuy.forEach(function (item) {
+  Array.prototype.forEach.call(itemsBuy, function (item) {
     item.addEventListener('click', clickHandler);
   });
 
