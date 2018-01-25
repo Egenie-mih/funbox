@@ -46,7 +46,9 @@ gulp.task('style', function() {
     ]))
     .pipe(csscomb())
     .pipe(gulp.dest('build/css'))
-    .pipe(minify())
+    .pipe(minify({
+      restructure: false
+    }))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(browserSync.stream());
