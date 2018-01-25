@@ -964,7 +964,7 @@ _:-ms-fullscreen,
     font-size: 0;
 
     position: relative;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
 
     overflow: hidden;
