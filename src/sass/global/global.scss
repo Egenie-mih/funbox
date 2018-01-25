@@ -6,6 +6,8 @@ html
 body
 {
     font-family: $font-trebuchet;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     font-size: 15px;
     font-weight: 400;
 

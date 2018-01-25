@@ -1,3 +1,4 @@
+// COMMON
 @import 'global/normalize.scss';
 @import 'global/fonts.scss';
 
@@ -6,4 +7,7 @@
 
 @import 'global/global.scss';
 
-@import 'blocks/catfood.scss';
+// INCLUDES
+@import 'blocks/header/header';
+@import 'blocks/footer/footer';
+@import 'blocks/index/index-main';

@@ -1,4 +1,15 @@
 extends template
 
+block title 
+    title Тестовое для FunBox
+
 block content
-    include index/index-content
+    // Header
+    include header/header
+
+    // Index main content
+    main.index-page
+        include index/catfood
+
+    // Footer
+    include footer/footer

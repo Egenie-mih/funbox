@@ -44,13 +44,13 @@ _:-ms-fullscreen,
 
 .catfood__title
 {
-    font: 300 36px/1.2 $font-exo;
+    font: 100 36px/1 $font-exo;
 
     display: block;
 
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     padding: 0 15px;
 
     text-align: center;
@@ -74,7 +74,7 @@ _:-ms-fullscreen,
     position: relative;
 
     width: 320px;
-    margin-top: 39px;
+    margin-top: 40px;
     margin-bottom: 20px;
     &:before
     {
@@ -108,7 +108,7 @@ _:-ms-fullscreen,
         display: inline-block;
 
         width: 160px;
-        height: 39px;
+        height: 40px;
 
         content: '';
         cursor: pointer;
@@ -238,6 +238,7 @@ _:-ms-fullscreen,
     border-top: 0;
     border-radius: 0 0 12px 12px;
     background-color: $bg-graywhite;
+    min-height: 440px;
     &:before
     {
         position: absolute;
@@ -263,7 +264,7 @@ _:-ms-fullscreen,
 
     position: relative;
     z-index: 1;
-    top: -20px;
+    top: -19px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -281,7 +282,7 @@ _:-ms-fullscreen,
 
     position: relative;
     z-index: 1;
-    top: -20px;
+    top: -19px;
 
     display: none;
 
@@ -295,8 +296,8 @@ _:-ms-fullscreen,
 }
 .catfood__description
 {
-    min-height: 163px;
-    margin-top: -14px;
+    min-height: 162px;
+    margin-top: -12px;
     padding-left: 44px;
 
     border-radius: 0 0 8px 8px;
@@ -316,7 +317,7 @@ _:-ms-fullscreen,
     line-height: 1.1;
 
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     margin-left: -2px;
 
     color: $font-black;
@@ -356,8 +357,8 @@ _:-ms-fullscreen,
 {
     position: absolute;
     z-index: 2;
-    right: 11px;
-    bottom: 11px;
+    right: 12px;
+    bottom: 12px;
 
     box-sizing: border-box;
     width: 80px;
@@ -396,7 +397,7 @@ _:-ms-fullscreen,
     overflow: hidden;
 
     border-radius: 0 0 8px 8px;
-    img
+    & img
     {
         width: 100%;
         height: auto;
@@ -407,11 +408,11 @@ _:-ms-fullscreen,
 {
     font-size: 13px;
     font-weight: 400;
-    line-height: 16px;
-    min-height: 16px;
+    line-height: 13px;
+    min-height: 14px;
 
     margin: 0;
-    padding-top: 15px;
+    margin-top: 15px;
 
     text-align: center;
 
@@ -462,6 +463,8 @@ _:-ms-fullscreen,
     border-bottom: 1px dashed $font-blue;
     border-left: none;
     background-color: transparent;
+    -webkit-appearance: none;
+    line-height: 1;
     &:hover
     {
         color: $font-lightblue;

@@ -1,0 +1,20 @@
+@import 'blocks/index/catfood.scss';
+
+
+.index-page {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+/* Internet Explorer 11+ */
+_:-ms-fullsc  reen,
+:root .index-page
+{
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}

@@ -537,7 +537,10 @@ body
     height: 100%;
     margin: 0;
 
-    background-color: #000;
+    background-color: #000; 
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .catfood
@@ -601,14 +604,14 @@ _:-ms-fullscreen,
 
 .catfood__title
 {
-    font: 300 36px/1.2 'Exo2Thin', 'Arial', sans-serif;
+    font: 100 36px/1 'Exo2Thin', 'Arial', sans-serif;
 
     display: block;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     padding: 0 15px;
 
     text-align: center;
@@ -641,7 +644,7 @@ _:-ms-fullscreen,
     position: relative;
 
     width: 320px;
-    margin-top: 39px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 .catfood__item:before
@@ -677,7 +680,7 @@ _:-ms-fullscreen,
     display: inline-block;
 
     width: 160px;
-    height: 39px;
+    height: 40px;
 
     content: '';
     cursor: pointer;
@@ -789,6 +792,7 @@ _:-ms-fullscreen,
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    min-height: 440px; 
 
     cursor: pointer;
 
@@ -821,7 +825,7 @@ _:-ms-fullscreen,
 
     position: relative;
     z-index: 1;
-    top: -20px;
+    top: -19px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -840,7 +844,7 @@ _:-ms-fullscreen,
 
     position: relative;
     z-index: 1;
-    top: -20px;
+    top: -19px;
 
     display: none;
 
@@ -855,8 +859,8 @@ _:-ms-fullscreen,
 
 .catfood__description
 {
-    min-height: 163px;
-    margin-top: -14px;
+    min-height: 162px;
+    margin-top: -12px;
     padding-left: 44px;
 
     border-radius: 0 0 8px 8px;
@@ -923,8 +927,8 @@ _:-ms-fullscreen,
 {
     position: absolute;
     z-index: 2;
-    right: 11px;
-    bottom: 11px;
+    right: 12px;
+    bottom: 12px;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -977,11 +981,11 @@ _:-ms-fullscreen,
 {
     font-size: 13px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 13px;
 
-    min-height: 16px;
+    min-height: 14px;
     margin: 0;
-    padding-top: 15px;
+    margin-top: 15px;
 
     text-align: center;
 
@@ -1023,6 +1027,7 @@ _:-ms-fullscreen,
 .catfood__buy-button
 {
     font-family: 'Trebuchet MS', sans-serif;
+    line-height: 1; 
 
     padding: 0;
 
@@ -1035,11 +1040,36 @@ _:-ms-fullscreen,
     border-bottom: 1px dashed #1698d9;
     border-left: none;
     background-color: transparent;
+
+    -webkit-appearance: none;
 }
 .catfood__buy-button:hover
 {
     color: #2ea8e6;
     border-bottom: 1px dashed #2ea8e6;
+}
+
+.index-page
+{
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:     flex; 
+
+    width: 100%;
+    min-height: 100%;
+}
+
+/* Internet Explorer 11+ */
+_:-ms-fullsc reen,
+:root .index-page
+{
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display:     flex; 
+
+    width: 100%;
+    height: 100%;
 }
 @media (min-width: 380px)
 {
