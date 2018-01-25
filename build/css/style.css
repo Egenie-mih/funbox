@@ -854,10 +854,10 @@ _:-ms-fullscreen,
     position: relative;
     z-index: 1;
     top: -24px;
+    left: 44px;
 
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 44px;
 
     cursor: pointer;
 
