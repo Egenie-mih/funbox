@@ -74,20 +74,20 @@ _:-ms-fullscreen,
     position: relative;
 
     width: 320px;
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 20px;
     &:before
     {
         position: absolute;
         z-index: 0;
-        top: -40px;
-        left: 20px;
+        top: -45px;
+        left: 21px;
 
         display: inline-block;
 
         box-sizing: border-box;
         width: 160px;
-        height: 40px;
+        height: 45px;
 
         content: '';
         cursor: pointer;
@@ -102,13 +102,13 @@ _:-ms-fullscreen,
     {
         position: absolute;
         z-index: 0;
-        top: -40px;
+        top: -45px;
         right: 0;
 
         display: inline-block;
 
         width: 160px;
-        height: 40px;
+        height: 45px;
 
         content: '';
         cursor: pointer;
@@ -238,7 +238,7 @@ _:-ms-fullscreen,
     border-top: 0;
     border-radius: 0 0 12px 12px;
     background-color: $bg-graywhite;
-    min-height: 440px;
+    min-height: 435px;
     &:before
     {
         position: absolute;
@@ -247,11 +247,11 @@ _:-ms-fullscreen,
         left: 1px;
 
         width: 312px;
-        height: 3px;
+        height: 6px;
 
         content: '';
 
-        border-radius: 5px;
+        border-radius: 6px;
         background-color: #f2f2f2;
     }
 }
@@ -264,7 +264,7 @@ _:-ms-fullscreen,
 
     position: relative;
     z-index: 1;
-    top: -19px;
+    top: -24px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -282,7 +282,7 @@ _:-ms-fullscreen,
 
     position: relative;
     z-index: 1;
-    top: -19px;
+    top: -24px;
 
     display: none;
 
@@ -296,8 +296,8 @@ _:-ms-fullscreen,
 }
 .catfood__description
 {
-    min-height: 162px;
-    margin-top: -12px;
+    min-height: 160px;
+    margin-top: -17px;
     padding-left: 44px;
 
     border-radius: 0 0 8px 8px;
@@ -363,7 +363,7 @@ _:-ms-fullscreen,
     box-sizing: border-box;
     width: 80px;
     height: 80px;
-    padding-top: 12px;
+    padding-top: 11px;
 
     text-align: center;
 
@@ -381,7 +381,7 @@ _:-ms-fullscreen,
 .catfood__weight-units
 {
     font-size: 21px;
-    line-height: 16px;
+    line-height: 18px;
 
     display: block;
 }
