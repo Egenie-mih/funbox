@@ -149,7 +149,7 @@
         {
             .product-item__cancel
             {
-                display: block;
+                display: inline-block;
             }
             .product-item__promo
             {
@@ -198,6 +198,8 @@
     z-index: 1;
     top: -24px;
 
+    width: 240px;
+    display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     left: 44px;
@@ -220,7 +222,8 @@
 
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 44px;
+    left: 44px;
+    width: 240px;
 
     cursor: pointer;
 

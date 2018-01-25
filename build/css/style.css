@@ -807,7 +807,7 @@ _:-ms-fullscreen,
 }
 .product-item--checked-hover:hover .product-item__cancel
 {
-    display: block;
+    display: inline-block;
 }
 .product-item--checked-hover:hover .product-item__promo
 {
@@ -856,6 +856,9 @@ _:-ms-fullscreen,
     top: -24px;
     left: 44px;
 
+    display: inline-block;
+
+    width: 240px;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -873,12 +876,13 @@ _:-ms-fullscreen,
     position: relative;
     z-index: 1;
     top: -24px;
+    left: 44px;
 
     display: none;
 
+    width: 240px;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 44px;
 
     cursor: pointer;
 
