@@ -1061,7 +1061,7 @@ _:-ms-fullscreen,
 }
 
 /* Internet Explorer 11+ */
-_:-ms-fullsc reen,
+_:-ms-fullscreen,
 :root .index-page
 {
     display: -ms-flex;
